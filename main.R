@@ -44,3 +44,20 @@ print(vdoble)
 # Operaciones con vectores
 nsimples <-c(2, 4, 6, 8, 10)
 print(nsimples + 5)
+
+# Valores no existentes
+numeros <- c(10, NA, 30, NA, NA)
+print(numeros)
+
+## si existe un NA en el vector numeros
+is.na(numeros)
+## Devolver solos los valores NA
+numeros[is.na(numeros)]
+## Devolver solos los valores no NA
+numeros[!is.na(numeros)]
+
+# Asignar valores 0 a un vector con NA
+numeros[is.na(numeros)] <- 0# Se pueden agregar valores usando moda, media, etc.
+print(numeros)
+
+# Matrices
