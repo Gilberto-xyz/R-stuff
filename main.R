@@ -61,3 +61,42 @@ numeros[is.na(numeros)] <- 0# Se pueden agregar valores usando moda, media, etc.
 print(numeros)
 
 # Matrices
+m <- matrix(c(10, 10, 10, 10, 10, 10), nrow=2, ncol=3) #simple
+m
+
+matrix2 <- matrix(c(1, 2, 3, 4), nrow=2, ncol=2, dimnames=list(c("j", "k"), c("l",'m'))) # Con indices 
+matrix2
+
+## Mostrar los valores de la posicion que deseemos de la matriz
+matrix2[1,1]
+matrix2[1,]
+matrix2[,1]
+
+## Asignar un valor en la posicion deseada
+m[1,1] <- 2
+m
+
+## Asignar el mismo valor para toda una fila/columna
+m[2,] <- 99
+m
+
+# Matriz combinada con vectores en columnas o filas
+mcol <- cbind(c(1,1,1,1,1), c(2,2,2,2,2))
+mcol
+
+mrow <- rbind(c(1,1,1,1,1), c(2,2,2,2,2))
+mrow
+
+# Se puede pasar una lista a la matriz para cambiar su indice 
+matrix2
+## Filas
+rownames(matrix2) <- list("Andres", "Noe")
+matrix2
+
+## Columnas
+colnames(matrix2) <- list("Edad","Hijos")
+matrix2
+
+# Se pueden presentar mejor los datos con el nuevo indice
+matrix2["Noe", "Hijos"] # nice
+matrix2[2,2]            # no nice
