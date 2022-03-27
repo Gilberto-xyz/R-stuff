@@ -100,3 +100,14 @@ matrix2
 # Se pueden presentar mejor los datos con el nuevo indice
 matrix2["Noe", "Hijos"] # nice
 matrix2[2,2]            # no nice
+
+# listas
+L <- list(names=c('Juan', 'Pedro', 'Antonio'), age=c(10,11, 20))
+view(L)
+
+# Se puede convertir una lista en dataframe para una mejor visualizacion
+dataframe <- data.frame(L)
+view(dataframe)
+
+str(dataframe)
+

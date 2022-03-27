@@ -12,3 +12,7 @@ En este repositorio se almacena el script de R donde se conoce la sintaxis de R.
 - Tipos de datos
 - Vectores
 - Matrices
+- Listas 
+- Dataframes
+
+Instalacion de la librerias
